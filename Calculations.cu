@@ -116,10 +116,10 @@ void render( double numberPerPixel,
 		}
 	}
 
-	//MandelbrotSet << <numBlocks, threadsPerBlock >> > (numberPerPixel, leftTopX, leftTopY, 
-		//devResult);
-	JuliaSet << <numBlocks, threadsPerBlock >> > (numberPerPixel, leftTopX, leftTopY,
-		devResult,cx,cy);
+	MandelbrotSet << <numBlocks, threadsPerBlock >> > (numberPerPixel, leftTopX, leftTopY, 
+		devResult);
+	//JuliaSet << <numBlocks, threadsPerBlock >> > (numberPerPixel, leftTopX, leftTopY,
+	//	devResult,cx,cy);
 
 	cudaError_t  error = cudaGetLastError();
 	if (error != cudaSuccess)

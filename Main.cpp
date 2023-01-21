@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "C:/Programming/CImg/CImg.h"
+#include "CImg.h"
 #include "Calculations.cuh"
 
 using namespace cimg_library;
